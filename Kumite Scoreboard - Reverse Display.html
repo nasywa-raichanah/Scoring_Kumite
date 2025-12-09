@@ -11,50 +11,53 @@
 <body>
     <div class="d-flex justify-content-start">
         <div class="col-7 bg-dark text-white">
-            <!-- Tambahkan wrapper dengan position relative -->
+            <!-- Judul Kejuaraan -->
             <div class="position-relative text-center">
                 <h3 class="mt-2" style="font-size: 1.5em" id="title_output">SEBELAS MARET OPEN II</h3>
                 <h4 class="my-2" style="font-size: 1.5em" id="subtitle_output">INTERNATIONAL KARATE CHAMPIONSHIP 2025</h4>
-                
-                <!-- Tambahkan Tatami dengan absolute -->
+                <!-- Tatami -->
                 <span id="tatami_output" style="color:greenyellow; position: absolute; bottom: -40px; left: 50%; transform: translateX(-50%); font-size: 1.5em;">TATAMI I</span>
             </div>
             
             <div class="row my-2">
-                <!-- AKA -->
+                <!-- AO -->
                 <div class="col-6">
                     <div class="row mx-0">
-                        <div class="aka-flag">
-                            <img id="aka_flag_output" src="assets/flag/id.svg" width="30" height="28">
+                        <div class="ao-flag">
+                            <img id="ao_flag_output" src="assets/flag/id.svg" width="30" height="28">
                         </div>
-                        <h4 class="mb-0" id="aka_name_output">-</h4>
-                        <h6 id="aka_team_output">-</h6>
+                        <h4 class="mb-0" id="ao_name_output">-</h4>
+                        <h6 id="ao_team_output">-</h6>
                         <div class="d-flex my-0 align-items-center">
+                            <!-- Tanda WIN AO -->
                             <div class="p-1 flex-grow-1 hi-green text-center">
                                 <div id="ao_win_output" style="display: none;">
                                     <h1 id="ao_blink">WIN</h1>
                                 </div>
                             </div>
+                            <!-- Kotak Score AO -->
                             <div class="p-0 badge hi-bgblue" style="width: 160px; height: 160px; margin-bottom: 10px;">
                                 <h1 class="display-1" style="font-family: 'Arial Black'; font-size: 8rem;" id="score_ao"></h1>
-                                <div class="col-12 text-center hi-bggreen" id="aka_senshu_output" style="display: none;font-size: 2rem;">SENSHU</div>
+                                <div class="col-12 text-center hi-bggreen" id="ao_senshu_output" style="display: none;font-size: 2rem;">SENSHU</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- AO -->
+                <!-- AKA -->
                 <div class="col-6 text-end">
                     <div class="row mx-0">
-                        <div class="ao-flag">
-                            <img id="ao_flag_output" src="assets/flag/id.svg" width="40" height="28">
+                        <div class="aka-flag">
+                            <img id="aka_flag_output" src="assets/flag/id.svg" width="40" height="28">
                         </div>
-                        <h4 class="me-3 mb-0" id="ao_name_output">-</h4>
-                        <h6 class="me-3" id="ao_team_output">-</h6>
+                        <h4 class="me-3 mb-0" id="aka_name_output">-</h4>
+                        <h6 class="me-3" id="aka_team_output">-</h6>
                         <div class="d-flex my-0 align-items-center">
+                            <!-- Kotak Score AKA -->
                             <div class="p-0 badge hi-bgred" style="width: 160px; height: 160px; margin-bottom: 10px;">
                                 <h1 class="display-1" style="font-family: 'Arial Black'; font-size: 8rem;" id="score_aka"></h1>
-                                <div class="col-12 text-center hi-bggreen" id="ao_senshu_output" style="display: none;font-size: 2rem;">SENSHU</div>
+                                <div class="col-12 text-center hi-bggreen" id="aka_senshu_output" style="display: none;font-size: 2rem;">SENSHU</div>
                             </div>
+                            <!-- Tanda WIN AKA -->
                             <div class="p-1 flex-grow-1 hi-green text-center" id="aka_win_output" style="display: none;">
                                 <h1 id="aka_blink">WIN</h1>
                             </div>
@@ -62,64 +65,65 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- PENALTI-->
             <div class="container text-center my-0">
                 <div class="row" style="border-bottom: 1px solid grey;">
-                    <div class="col-5 position-relative my-4" style="height: 1rem;"> <!-- Increased height to accommodate labels -->
-                        <!-- Placeholders with fixed positions and visible borders -->
+                    <!-- AO -->
+                    <div class="col-5 position-relative my-4" style="height: 1rem;"> 
+                        <!-- Kotak Penalti AO -->
                         <span class="badge outline-warning" id="ao_pen1_placeholder" style="width: 40px; height: 24px; display: inline-block; position: absolute; left: 150px;"></span>
                         <span class="badge outline-warning" id="ao_pen2_placeholder" style="width: 40px; height: 24px; display: inline-block; position: absolute; left: 200px;"></span>
                         <span class="badge outline-warning" id="ao_pen3_placeholder" style="width: 40px; height: 24px; display: inline-block; position: absolute; left: 250px;"></span>
                         <span class="badge outline-warning" id="ao_pen4_placeholder" style="width: 40px; height: 24px; display: inline-block; position: absolute; left: 300px;"></span>
                         <span class="badge outline-danger" id="ao_pen5_placeholder" style="width: 40px; height: 24px; display: inline-block; position: absolute; left: 350px;"></span>
                     
-                        <!-- Filled Pen Slots (Initially Hidden) in the same positions -->
+                        <!-- Isi Kotak Penalti AKA -->
                         <span class="badge hi-bgyellow pen-slot" style="display: none; width: 40px; height: 24px; position: absolute; left: 150px;" id="ao_pen1_output"></span>
                         <span class="badge hi-bgyellow pen-slot" style="display: none; width: 40px; height: 24px; position: absolute; left: 200px;" id="ao_pen2_output"></span>
                         <span class="badge hi-bgyellow pen-slot" style="display: none; width: 40px; height: 24px; position: absolute; left: 250px;" id="ao_pen3_output"></span>
                         <span class="badge hi-bgyellow pen-slot" style="display: none; width: 40px; height: 24px; position: absolute; left: 300px;" id="ao_pen4_output"></span>
                         <span class="badge hi-bgred pen-slot" style="display: none; width: 40px; height: 24px; position: absolute; left: 350px;" id="ao_pen5_output"></span>
                     
-                        <!-- Labels under each pen -->
+                        <!-- Label Kotak Penalti AKA-->
                         <span style="position: absolute; top: 20px; left: 155px; font-size: 20px; font-weight: bold;">C1</span>
                         <span style="position: absolute; top: 20px; left: 205px; font-size: 20px; font-weight: bold;">C2</span>
                         <span style="position: absolute; top: 20px; left: 255px; font-size: 20px; font-weight: bold;">C3</span>
                         <span style="position: absolute; top: 20px; left: 305px; font-size: 20px; font-weight: bold;">HC</span>
-                        <span style="position: absolute; top: 20px; left: 365px; font-size: 20px; font-weight: bold;">H</span>
-                        
+                        <span style="position: absolute; top: 20px; left: 365px; font-size: 20px; font-weight: bold;">H</span> 
                     </div>
-                                 
+                    <!-- Tulisan PENALTIES -->
                     <div class="col-2 my-4">
-                            <h5 style="font-size: 1em; margin:0; padding:0;">PENALTIES</h5> <!-- No margin or padding -->
+                            <h5 style="font-size: 1em; margin:0; padding:0;">PENALTIES</h5> 
                     </div>
-                    <div class="col-5 position-relative my-4" style="height: 2rem;"> <!-- Increased height to accommodate labels -->
-                        <!-- AO Placeholders with fixed positions and visible borders -->
+                    <!-- AKA -->
+                    <div class="col-5 position-relative my-4" style="height: 2rem;"> 
+                        <!-- Kotak Penalti AO -->
                         <span class="badge outline-warning" id="aka_pen1_placeholder" style="width: 40px; height: 24px; display: inline-block; position: absolute; right: 350px;"></span>
                         <span class="badge outline-warning" id="aka_pen2_placeholder" style="width: 40px; height: 24px; display: inline-block; position: absolute; right: 300px;"></span>
                         <span class="badge outline-warning" id="aka_pen3_placeholder" style="width: 40px; height: 24px; display: inline-block; position: absolute; right: 250px;"></span>
                         <span class="badge outline-warning" id="aka_pen4_placeholder" style="width: 40px; height: 24px; display: inline-block; position: absolute; right: 200px;"></span>
                         <span class="badge outline-danger" id="aka_pen5_placeholder" style="width: 40px; height: 24px; display: inline-block; position: absolute; right: 150px;"></span>
                     
-                        <!-- AO Filled Pen Slots aligned to the right, with pen1 on the far right -->
+                        <!-- Isi Kotak Penalti AO -->
                         <span class="badge hi-bgyellow pen-slot" style="display: none; width: 40px; height: 24px; position: absolute; right: 350px;" id="aka_pen1_output"></span>
                         <span class="badge hi-bgyellow pen-slot" style="display: none; width: 40px; height: 24px; position: absolute; right: 300px;" id="aka_pen2_output"></span>
                         <span class="badge hi-bgyellow pen-slot" style="display: none; width: 40px; height: 24px; position: absolute; right: 250px;" id="aka_pen3_output"></span>
                         <span class="badge hi-bgyellow pen-slot" style="display: none; width: 40px; height: 24px; position: absolute; right: 200px;" id="aka_pen4_output"></span>
                         <span class="badge hi-bgred pen-slot" style="display: none; width: 40px; height: 24px; position: absolute; right: 150px;" id="aka_pen5_output"></span>
                     
-                        <!-- Labels under each AO pen -->
+                        <!-- Label Kotak Penalti AO -->
                         <span style="position: absolute; top: 20px; right: 160px; font-size: 20px; font-weight: bold;">H</span>
                         <span style="position: absolute; top: 20px; right: 205px; font-size: 20px; font-weight: bold;">HC</span>
                         <span style="position: absolute; top: 20px; right: 255px; font-size: 20px; font-weight: bold;">C3</span>
                         <span style="position: absolute; top: 20px; right: 305px; font-size: 20px; font-weight: bold;">C2</span>
                         <span style="position: absolute; top: 20px; right: 360px; font-size: 20px; font-weight: bold;">C1</span>
-                        
                     </div>                    
                 </div>
             </div>
-            <div class="container text-center row my-0" style="margin: 0; padding: 0;"> <!-- No margin or padding -->
-                <div class="row align-items-center" style="margin: 0; padding: 0;"> <!-- Remove row spacing -->
-                    <!-- <div class="col-4"><h4 id="tatami_output">-</h4></div> -->
-                    <div class="text-center" style="margin: 0; padding: 0;"> <!-- No margin or padding -->
+            <div class="container text-center row my-0" style="margin: 0; padding: 0;">
+                <div class="row align-items-center" style="margin: 0; padding: 0;"> 
+                    <div class="text-center" style="margin: 0; padding: 0;"> 
                         <h1 id="outputMinute" style="display: inline; font-size: 4.5em;">00</h1>
                         <h1 style="display: inline; font-size: 4.5em;">:</h1>
                         <h1 id="outputSecond" style="display: inline; font-size: 4.5em;">00</h1>
@@ -132,80 +136,50 @@
         </div>
         <div class="col-5 mx-2 my-4">
             <h2 class="text-center">KUMITE SCOREBOARD REVERSE</h2>
-            <!-- <div class="mb-3 row">
-                <label for="judul" class="col-sm-2 col-form-label">Judul</label>
-                <div class="col-sm-9">
-                    <input type="text" value="KEJUARAAN KARATE PELAJAR & MAHASISWA SE-JAWA TENGAH PIALA KADISPORA SURAKARTA TAHUN 2024" class="form-control" id="title_input" onchange="js_title()">
+            <div class="mb-3 row gx-2 align-items-center">
+                <!-- Tatami -->
+                <div class="col-auto">
+                    <select id="tatami_input" class="form-select form-select-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Nomor Tatami" onchange="js_tatami()">
+                        <option value="1">Tatami 1</option>
+                        <option value="2">Tatami 2</option>
+                        <option value="3">Tatami 3</option>
+                        <option value="4">Tatami 4</option>
+                        <option value="5">Tatami 5</option>
+                        <option value="6">Tatami 6</option>
+                        <option value="7">Tatami 7</option>
+                        <option value="8">Tatami 8</option>
+                    </select>
                 </div>
-            </div> -->
-            <!-- <div class="mb-3 row form-inline">
-                <div class="col-sm-11">
-                    <input type="text" value="" placeholder="KELAS PERTANDINGAN" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Kelas Pertandingan" class="form-control" id="roundclass_input" onchange="js_roundclass()">
-                </div>
-            </div> -->
-            <div class="mb-3 row align-items-center">
-                <!-- <div class="col-sm-2">
-                    <input type="number" value="" placeholder="TATAMI" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Nomor Tatami" class="form-control" id="tatami_input" onchange="js_tatami()">
-                </div> -->
+                <!-- Selisih poin -->
                 <div class="col-sm-2">
-                    <label for="dev_point" class="form-label">Selisih Poin</label> <!-- Added label for clarity -->
-                    <input id="dev_point" min="0" type="number" value="8" placeholder="Masukkan Selisih Poin" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="SELISIH POIN" class="form-control" onchange="js_dev_point()">
-                </div>                
-                <div class="col-sm-3">
-                    <a href="Kumite Scoreboard.html"><button type="button" class="btn btn-outline-success btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Normal Display">CHANGE DISPLAY</button></a>
+                    <input id="dev_point" min="0" type="number" value="8" class="form-control form-control-sm" data-bs-title="SELISIH POIN" onchange="js_dev_point()">
                 </div>
-                <div class="col-sm-2">
-                    <input id="inputMinute" min="0" type="number" value="2" placeholder="MENIT" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="MENIT TIMER" class="form-control">
-                </div> :
-                <div class="col-sm-2">
-                    <input id="inputSecond" min="0" type="number" max="60" value="00" placeholder="DETIK" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="DETIK TIMER" class="form-control">
+                <!-- Change display -->
+                <div class="col-auto">
+                    <a href="Kumite Scoreboard.html">
+                        <button type="button" class="btn btn-outline-success btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Normal Display">CHANGE DISPLAY</button>
+                    </a>
                 </div>
-                                <!-- Add Time Button -->
-                                <div class="col-sm-2">
-                                    <button type="button" class="btn btn-primary btn-sm" id="add_time_button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add Extra Time">ADD TIME</button>
-                                </div>
+                <!-- Waktu -->
+                <div class="col-auto">
+                    <div class="d-flex align-items-center gap-1">
+                        <input id="inputMinute" type="number" class="form-control form-control-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Menit" style="width:55px;" value="2">
+                        <span>:</span>
+                        <input id="inputSecond" type="number" class="form-control form-control-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Detik" style="width:55px;" value="00">
+                    </div>
+                </div>
+                <!-- Add time -->
+                <div class="col-auto">
+                    <button type="button" class="btn btn-primary btn-sm" id="add_time_button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add Extra Time">+1 Detik</button>
+                </div>
             </div>
             <div class="container text-center mt-2">
                 <div class="row mx-1">
-
-
+                    <!-- Input Team AO -->
                     <div class="col-6 hi-outblue">
                         <div class="row align-items-center">
                             <div class="col justify-content-center">
                                 <H6>AO</H6>
-                            </div>
-                        </div>
-                        <div class="row form-inline">
-                            <label for="nationality" class="col-sm-2 col-form-label">NAT</label>
-                            <div class="col-sm-6">
-                                <select id="aka_nat_input" class="form-select form-select-sm" aria-label="Select Nationality">
-                                    <option selected value="INA" data-flag="assets/flag/id.svg">Indonesia</option>
-                                    <option value="BRU" data-flag="assets/flag/bn.svg">Brunei Darussalam</option>
-                                    <option value="MAS" data-flag="assets/flag/my.svg">Malaysia</option>
-                                    <option value="SDN" data-flag="assets/flag/sd.svg">Sudan</option>
-                                    <option value="MYA" data-flag="assets/flag/mm.svg">Myanmar</option>
-                                    <option value="MAR" data-flag="assets/flag/ma.svg">Morocco</option>
-                                    <option value="TAN" data-flag="assets/flag/tz.svg">Tanzania</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <label for="aka_name" class="col-sm-2 col-form-label">Nama</label>
-                            <div class="col-sm-10">
-                                <input type="text" value="" class="form-control form-control-sm" id="aka_name_input" onchange="js_aka_name()">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <label for="aka_team" class="col-sm-2 col-form-label">Team</label>
-                            <div class="col-sm-10">
-                                <input type="text" value="" class="form-control form-control-sm" id="aka_team_input" onchange="js_aka_team()">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 hi-outred">
-                        <div class="row align-items-center">
-                            <div class="col justify-content-center">
-                                <h6>AKA</h6>
                             </div>
                         </div>
                         <div class="row form-inline">
@@ -235,6 +209,40 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Input Team AKA -->
+                    <div class="col-6 hi-outred">
+                        <div class="row align-items-center">
+                            <div class="col justify-content-center">
+                                <h6>AKA</h6>
+                            </div>
+                        </div>
+                        <div class="row form-inline">
+                            <label for="nationality" class="col-sm-2 col-form-label">NAT</label>
+                            <div class="col-sm-6">
+                                <select id="aka_nat_input" class="form-select form-select-sm" aria-label="Select Nationality">
+                                    <option selected value="INA" data-flag="assets/flag/id.svg">Indonesia</option>
+                                    <option value="BRU" data-flag="assets/flag/bn.svg">Brunei Darussalam</option>
+                                    <option value="MAS" data-flag="assets/flag/my.svg">Malaysia</option>
+                                    <option value="SDN" data-flag="assets/flag/sd.svg">Sudan</option>
+                                    <option value="MYA" data-flag="assets/flag/mm.svg">Myanmar</option>
+                                    <option value="MAR" data-flag="assets/flag/ma.svg">Morocco</option>
+                                    <option value="TAN" data-flag="assets/flag/tz.svg">Tanzania</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="aka_name" class="col-sm-2 col-form-label">Nama</label>
+                            <div class="col-sm-10">
+                                <input type="text" value="" class="form-control form-control-sm" id="aka_name_input" onchange="js_aka_name()">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="aka_team" class="col-sm-2 col-form-label">Team</label>
+                            <div class="col-sm-10">
+                                <input type="text" value="" class="form-control form-control-sm" id="aka_team_input" onchange="js_aka_team()">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="container text-center">
@@ -256,11 +264,12 @@
             </div>
             <div class="container text-center mt-2">
                 <div class="row mx-1">
+                    <!-- Input Poin, Penalti, Senshu, dan WIN AO -->
                     <div class="col-6 hi-outblue">
                         <div class="row align-items-center mt-1">
                             <div class="col justify-content-center">
-                                <button type="button" class="btn btn-outline-success btn-sm" id="aka_senshu_on" style="display: inline-block;" onclick="aka_senshu_on()">SENSHU</button>
-                                <button type="button" class="btn btn-success btn-sm" id="aka_senshu_off" style="display: none;" onclick="aka_senshu_off()">SENSHU</button>
+                                <button type="button" class="btn btn-outline-success btn-sm" id="ao_senshu_on" style="display: inline-block;" onclick="ao_senshu_on()">SENSHU</button>
+                                <button type="button" class="btn btn-success btn-sm" id="ao_senshu_off" style="display: none;" onclick="ao_senshu_off()">SENSHU</button>
                             </div>
                         </div>
                         <div class="my-1 row align-items-center">
@@ -294,11 +303,12 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Input Poin, Penalti, Senshu, dan WIN AKA -->
                     <div class="col-6 hi-outred">
                         <div class="row align-items-center mt-1">
                             <div class="col justify-content-center">
-                                <button type="button" class="btn btn-outline-success btn-sm" id="ao_senshu_on" style="display: inline-block;" onclick="ao_senshu_on()">SENSHU</button>
-                                <button type="button" class="btn btn-success btn-sm" id="ao_senshu_off" style="display: none;" onclick="ao_senshu_off()">SENSHU</button>
+                                <button type="button" class="btn btn-outline-success btn-sm" id="aka_senshu_on" style="display: inline-block;" onclick="aka_senshu_on()">SENSHU</button>
+                                <button type="button" class="btn btn-success btn-sm" id="aka_senshu_off" style="display: none;" onclick="aka_senshu_off()">SENSHU</button>
                             </div>
                         </div>
                         <div class="my-1 row align-items-center">

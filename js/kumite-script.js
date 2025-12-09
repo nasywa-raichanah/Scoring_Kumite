@@ -79,6 +79,7 @@ function round_set() {
   document.getElementById("ao_name_output").innerHTML = ao_name;
   document.getElementById("ao_team_output").innerHTML = ao_team;
   SetClock();
+  js_tatami();
 }
 
 // Clear Set (reset pemain + pertandingan total)
@@ -551,4 +552,10 @@ function ao_dev_point() {
   } else {
     ao_win_off();
   }
+}
+
+//Pilihan tatami
+function js_tatami() {
+    var selectedTatami = document.getElementById("tatami_input").value;
+    document.getElementById("tatami_output").innerHTML = "TATAMI " + selectedTatami;
 }
