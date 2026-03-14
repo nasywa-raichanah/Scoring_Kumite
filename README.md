@@ -1,7 +1,7 @@
 # Kumite Score Board
 
 ## Deskripsi
-Kumite Score Board merupakan aplikasi web yang dirancang untuk mendukung pencatatan skor pada laga kumite (karate). Aplikasi ini memudahkan juri atau petugas pertandingan dalam mengatur skor, hukuman, dan durasi pertandingan dengan cara yang lebih cepat dan terorganisir.
+Kumite Score Board merupakan aplikasi web yang dirancang untuk mendukung pencatatan skor pada pertandingan kumite (karate). Aplikasi ini memudahkan juri atau petugas pertandingan dalam mengatur skor, hukuman, dan durasi pertandingan dengan cara yang lebih cepat dan terorganisir.
 
 Dengan aplikasi ini, petugas dapat menambahkan poin untuk setiap atlet, mencatat penalti, serta memantau progres pertandingan lewat tampilan papan skor digital. Sistem juga dilengkapi fitur penentuan pemenang secara otomatis berdasarkan perbedaan poin, akumulasi penalti, maupun hasil skor ketika waktu pertandingan berakhir.
 
@@ -30,7 +30,7 @@ Sistem menyediakan beberapa kondisi yang dapat menentukan pemenang secara otomat
    - Ketika timer pertandingan mencapai waktu akhir, sistem akan secara otomatis menampilkan pemenang berdasarkan **skor tertinggi** yang diperoleh oleh atlet.
 
 ## Tujuan Pengembangan
-Pengembangan aplikasi ini bertujuan untuk menyederhanakan pengelolaan laga kumite, terutama dalam pencatatan poin dan penalti secara real-time. Sistem ini memungkinkan petugas mencatat hasil pertandingan lebih cepat sambil memantau perkembangan skor secara langsung.
+Pengembangan aplikasi ini bertujuan untuk menyederhanakan pengelolaan pertandingan kumite, terutama dalam pencatatan poin dan penalti secara real-time. Sistem ini memungkinkan petugas mencatat hasil pertandingan lebih cepat sambil memantau perkembangan skor secara langsung.
 
 ## Teknologi yang Digunakan
 Aplikasi dibangun dengan teknologi web berikut:
