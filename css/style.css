@@ -78,3 +78,7 @@ th {
 .time-danger { 
     color: red !important; 
 }
+
+.tatami_output{
+    color:greenyellow
+}
